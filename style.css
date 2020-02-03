@@ -1,0 +1,30 @@
+.family {
+    line-height: 1.9em;
+}
+.header {
+    padding: 60px;
+    text-align: left;
+    background-image: radial-gradient(circle at center,#05ff8f 0%,#12876f 100%)!important;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.bio {
+    text-align: left;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .1em;
+}
+.mywork {
+    line-height: 1.9em;
+}
+  .logo {
+      background-color: #333333;
+      padding: 10px;
+  }
+img {
+    width: 491px;
+}
+.story {
+    line-height: 1.9em;
+}

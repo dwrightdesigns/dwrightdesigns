@@ -48,7 +48,7 @@ p {
       padding-left: 30px;
       padding-bottom: 10px;
       color: white;
-      width: 1410px;      
+      width: 1412px;      
   }
 .dwrightdesigns {
       width: 386px;
@@ -160,7 +160,6 @@ a, a:visited {
 }
 .graphicbio {
   font-size: 18px;
-  color: #333333;
-  opacity: 0.5;
+  color: #999999;
   line-height: 1.6em;
 }

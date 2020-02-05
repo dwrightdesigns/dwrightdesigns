@@ -1,8 +1,23 @@
+* {
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 16px;
+}
 .family {
     line-height: 1.9em;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.family1 {
+    font-size: 18px;
+    margin-top: 10px;
 }
 .header {
-    padding: 60px;
+    padding: 80px;
     text-align: left;
     background-image: radial-gradient(circle at center,#05ff8f 0%,#12876f 100%)!important;
     color: white;
@@ -14,17 +29,138 @@
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .1em;
+    margin-bottom: -30px;
+    margin-left: 20px;
 }
 .mywork {
     line-height: 1.9em;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-  .logo {
+.mywork1 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.logo {
       background-color: #333333;
-      padding: 10px;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      color: white;
+      width: 1410px;      
   }
-img {
-    width: 491px;
-}
+.dwrightdesigns {
+      width: 386px;
+  }
+.menu {
+    background-color: #333333;
+    display: inline-flex;
+    position: fixed;
+  }
+.things {
+      margin-top: 70px;
+      margin-left: 1100px;
+      position: fixed;
+      width: 200px;
+  }
+.aboutmenu {
+      margin-top: 70px;
+      margin-left: 1200px;
+      position: fixed;
+      width: 200px;
+  }
 .story {
     line-height: 1.9em;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+a, a:visited {
+    text-decoration: none;
+    position: relative;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a:after, a:visited:after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #86c178;
+    transition: 0.1s;
+  }
+  a:hover:after, a:visited:hover:after {
+    width: 100%;
+  }
+  a.block, a:visited.block {
+    display: block;
+    padding: 0.5em;
+  }
+  a:hover {
+    color:#86c178;
+  }
+  .about {
+      font-size: 60px;
+      margin-left: 40px;
+      margin-bottom: 40px;
+      margin-top: 200px;
+  }
+  .bio {
+      width: 600px;
+      box-sizing: content-box;
+      line-height: 1.9em;
+      font-size: 23px;
+  }
+  .picture {
+    width: 491px;
+    height: 737px;
+    box-sizing: content-box;
+    display: flexbox;
+    margin-left: 840px;
+    margin-top: -200px;
+  }
+  img {
+      width: 530px;
+  }
+  .container {
+      width: 560px;
+      height: 420px;
+      padding-left: 120px;
+      margin-top: -520px;
+      color: #333333;
+
+  }
+  hr {
+      display: block;
+      width: 100px;
+      margin-left: 1.4em;
+      margin-right: 1.4em;
+      margin-block-start: auto;
+      margin-block-end: auto;
+      overflow: hidden;
+      border: none;
+      border-width: none;
+      background-color: white;
+  }
+  .graphics {
+    margin-top: -140px;
+    margin-left: 640px;
+  }
+  .graphichead {
+  margin-left: 120px;
+  margin-top: 80px;
+  }
+  h2 {
+    color: #5CB870;
+    font-size: 48px;
+}
+.graphicbio {
+  font-size: 18px;
+  color: #333333;
+  opacity: 0.5;
+  line-height: 1.6em;
 }

@@ -1,352 +1,303 @@
-@font-face{
-  src: url(fonts/Marvel-Regular.ttf);
-  font-family: nos;
-}
-* {
-    margin: 0;
-    padding-bottom: 10px;
-  }
-  .main-header{
-    background-color: #333333;
-    height: 180px;
-  }
-  .main-menu {
-    list-style-type: none;
+*{
     margin: 0;
     padding: 0;
-  }
-  li a {
-    width: 100px;
-    height: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@font-face{
+    src: url(fonts/Marvel-Regular.ttf);
     font-family: nos;
-    font-size: 24px;
-    letter-spacing: .09em;
   }
-  li {
-    float: right;
-    padding-top: 80px;
+
+h1, h2, h3, h4, h5, h6{
+    font-family: trajan-pro-3, serif;
+} 
+
+p{
+    font-family: nos;
+    font-size: 20px;
+}
+
+nav{
+    background: #333333;
+}
+
+nav img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    justify-content: flex-start;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
     padding-right: 40px;
-  }
-p {
-  font-family: 'Marvel', sans-serif;
-  font-size: 18px;
-}
-h1,h2,h3,h4,h5,h6 {
-  font-family: trajan-pro-3, serif;
-}
-.family {
-    line-height: 1.9em;
-    margin-top: 10px;
-    font-size: 14px;
+    padding-left: 10px;
+    font-size: 20px;
     font-family: 'Marvel', sans-serif;
-  }
-#text{
-  font-size: 24px;
+    text-transform: uppercase;
+    /* width: 100px; */
 }
-.family1 {
-    font-size: 18px;
-    margin-top: 10px;
+
+nav a:hover{
+    color: #05ff8f;
 }
-.intro {
+
+@media screen and (min-width: 768px) {
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.intro{
     padding: 80px;
     margin-bottom: 0;
     text-align: left;
     background-image: radial-gradient(circle at center,#05ff8f 0%,#12876f 100%)!important;
     color: white;
-    font-size: 30px;
     font-family: trajan-pro-3, serif;
-  }
-  .intro-graph{
-    padding: 80px;
-    margin-bottom: 100px;
-    text-align: left;
-    background-image: radial-gradient(circle at center,#05ff8f 0%,#12876f 100%)!important;
-    color: white;
-    font-size: 30px;
-    font-family: trajan-pro-3, serif;
-  }
-.bio {
-    text-align: left;
-    font-size: 24px;
-    font-family: trajan-pro-3, serif;
-    letter-spacing: .05em;
-    margin-bottom: -30px;
-    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
 }
-.mywork1 {
-    font-size: 18px;
-    margin-top: 10px;
+
+.intro-content{
+    font-size: 30px;
+    width: 600px;
 }
-.logo {
-      background-color: #333333;
-      padding-top: 30px;
-      padding-left: 30px;
-      padding-bottom: 10px;
-      color: white;
-      width: 1412px;     
-  }
-.dwrightdesigns {
-      width: 386px;
-      padding-top: 40px;
-      padding-left: 40px;
-  }
-.menu {
-    background-color: #333333;
-    display: inline-flex;
-    position: fixed;
-    z-index: 1000;
-  }
-.things {
-      margin-top: 70px;
-      margin-left: 1100px;
-      position: fixed;
-      width: 200px;
-  }
-.aboutmenu {
-      margin-top: 70px;
-      margin-left: 1200px;
-      position: fixed;
-      width: 200px;
-  }
-.menu-btn, .menu-btn:visited {
-    text-decoration: none;
-    position: relative;
-    color:white;
-    font-family: nos;
-    letter-spacing: .1em;
-    }
-  .menu-btn:after, menu-btn:visited:after {
-    content: '';
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    background: #86c178;
-    transition: 0.1s;
-    
-  }
-  .menu-btn:hover:after, .menu-btn:visited:hover:after {
-    width: 100%;
-  }
-  .menu-btn.block, .menu-btn:visited.block {
-    display: block;
-    padding: 0.5em;
-  }
-  .menu-btn:hover {
-    color:#86c178;
-  }
-  .head-about {
-      font-size: 60px;
-      margin-left: 10px;
-      margin-bottom: 30px;
-      margin-top: 10px;
-      font-family: trajan-pro-3, serif;
-  }
-  .head-family{
-    font-size: 60px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    font-family: trajan-pro-3, serif;
-  }
-  .head-graphics{
-    font-size: 60px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    font-family: trajan-pro-3, serif;
-  }
-  .instagram{
+
+.intro p{
     padding-top: 20px;
-  }
-  .bio {
-      width: 600px;
-      box-sizing: content-box;
-      line-height: 1.9em;
-      font-size: 23px;
-  }
-  .picture {
+    letter-spacing: .05em;
+    color: white;
+}
+
+hr{
+    height: 2px;
+    background-color: white;
+    width: 80px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.intro img{
+    padding-top: 20px;
+}
+
+.intro-image{
     width: 491px;
-    height: 737px;
-    box-sizing: content-box;
-    display: flexbox;
-    margin-left: 840px;
-    margin-top: -200px;
-  }
-  .journal-pic {
-    width: 491px;
-    height: 737px;
-    box-sizing: content-box;
-    display: flexbox;
-    margin-left: 840px;
-    margin-top: -900px;
-  }
-  img {
-      width: 530px;
-  }
-  .container {
-      width: 620px;
-      height: 420px;
-      padding-left: 90px;
-      margin-top: -500px;
-      color: #333333;
-  }
-  hr {
-      display: block;
-      width: 100px;
-      margin-left: 10px;
-      margin-right: 1.4em;
-      margin-block-start: auto;
-      margin-block-end: auto;
-      overflow: hidden;
-      border: none;
-      border-width: none;
-      background-color: white;
-  }
-  .graphics {
-    margin-top: -220px;
-    margin-left: 720px;
+    margin-bottom: -120px;
 }
-  .graphichead {
-    margin-left: 90px;
-    margin-top: 80px;
+
+.postcards{
+    display: flex;
+    /* padding-top:200px; */
+    background-color: #eee;
 }
-.head-1 {
-    color: #b18752;
-    font-size: 48px;
+
+.postcards img{
+    width: 300px;
 }
-.head-2 {
-  color: #486e93;
-  font-size: 48px;
-  margin-left: 0;
+
+.postcards li{
+    background-color: white;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 60px;
 }
-.head-3 {
-  color: #d0653a;
-  font-size: 48px;
-  margin-left: 0;
+
+.postcards ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 90px;
 }
-.head-4 {
-  color: #ae4d91;
-  font-size: 48px;
-  margin-left: 0;
+
+.postcards h1{
+    font-size: 22px;
+    color: #12876f;
+    padding: 10px;
 }
-.graphicbio {
-  font-size: 18px;
-  color: #999999;
-  line-height: 1.6em;
+
+.postcards a{
+    text-decoration: none;
+    color: #12876f;
 }
-.about-me p {
-  color: #999999;
-  line-height: 1.9em;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-family: 'Marvel', sans-serif;
+
+.postcards h4{
+    font-size: 14px;
+    font-family: 'Marvel', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding: 10px;
 }
-div#text > p {
-  line-height: 1.5em;
-  letter-spacing: .05em;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: 'Marvel', sans-serif;
-  color: #333333;
+
+.postcards p{
+    color: #555;
+    padding: 10px;
 }
-.button-4{
-  width:184px;
-  height:60px;
-  border:4px solid #333333;
-  text-align:center;
-  cursor:pointer;
-  position:relative;
-  box-sizing:border-box;
-  overflow:hidden;
-  margin-top: 20px;
+
+.about-container{
+    display: flex;
+}
+.about-left{
+    width: 600px;
+    padding: 90px;
 
 }
+
+.about-left h3{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.about-left p{
+    line-height: 1.5em;
+    padding-top: 50px;
+}
+
+.about-container img{
+    width: 491px;
+    padding-top: 100px;
+}
+
+.graphic-head{
+    display: flex;
+}
+
+.graphic-content{
+    padding: 90px;
+    width: 600px;
+}
+
+.graphic-head img{
+    width: 600px;
+    padding: 90px;
+}
+
+.graphic-head h2{
+    font-size: 48px;
+    color: #12876f;
+}
+
+.graphic-head h3{
+    font-family: nos;
+    letter-spacing: .2em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.graphic-head p{
+    font-family: nos;
+    padding-bottom: 40px;
+}
+
+.button-4{
+    width:184px;
+    height:60px;
+    border:4px solid #333333;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    margin-top: 20px;
+  
+  }
 .button-4 a{
-  font-family: 'Marvel', sans-serif;
-  font-size:20px;
-  color:white;
-  text-decoration:none;
-  line-height:50px;
-  transition:all .5s ease;
-  z-index:2;
-  position:relative;
-}
+    font-family: 'Marvel', sans-serif;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+    line-height:50px;
+    transition:all .5s ease;
+    z-index:2;
+    position:relative;
+  }
+
 .eff-4{
-  width:184px;
-  height:50px;
-  left:-184px;
-  background:#333333;
-  position:absolute;
-  transition:all .5s ease;
-  z-index:1;
-}
+    width:184px;
+    height:52px;
+    left:-184px;
+    background:#333333;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+  }
+
 .button-4:hover .eff-4{
-  left:0;
-}
+    left:0;
+  }
+
 .button-4:hover a{
-  color:#fff;
+    color:#fff;
+  }
+
+.btn-1, .btn-2, .btn-3, .btn-4{
+      background-color: #12876f;
+  }
+
+.post-head{
+      padding: 90px;
+  }
+
+.post-head h1{
+      font-size: 38px;
+      font-weight: 100;
+  }
+
+.post-head h4{
+      padding-top: 10px;
+      padding-bottom: 20px;
+
+  }
+
+.post-head img{
+      width: 600px;
+      padding-bottom: 20px;
+  }
+
+.post-head p{
+    line-height: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 840px;
+    text-align: justify;
 }
-.btn-1 {
-  background-color: #b18752;
+
+blockquote{
+    border-left: 4px solid red;
+    padding-left: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+    width: 800px;
 }
-.btn-2 {
-  background-color: #486e93;
-}
-.btn-3 {
-  background-color: #d0653a;
-}
-.btn-4 {
-  background-color: #ae4d91;
-}
-.blog{
-  margin-top: 190px;
-  margin-left: 90px;
-  margin-right: 400px;
-  padding-top: 160px;
-  height: 500px;
-}
-.blog-head{
-  margin-left: 0px;
-  font-size: 38px;
-}
-.blog p{
-  margin-left: 0px;
-  line-height: 1.9em;
-  color: #666666;
-  text-align: justify;
-  font-family: nos;
-  font-size: 22px;
-}
-.meta{
-  color: #999999;
-  font-family: nos;
-  letter-spacing: .3em;
-  margin-top: -800px;
-}
-.blog q{
-  color: red;
-}
-.cover-img{
-  width: 400px;
-  margin-right: 10px;
-  margin-bottom: -20px;
-  float: left;
-}
-.bq1{
-  border-left: 4px solid red;
-  margin-left: 410px;
-}
-.bq2{
-  border-left: 4px solid red;
-}
-blockquote p{
-  padding-left: 20px;
-}
-blockquote cite{
-  padding-left: 20px;
-}
+
 .fa {
   padding: 20px;
   font-size: 20px;
@@ -357,53 +308,44 @@ blockquote cite{
 }
 
 .social-btns{
-  margin-top: 400px;
-  margin-left: 90px;
+    padding-top: 20px;
 }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
 
-.fa:hover {
-    opacity: 0.7;
-}
+  /* .sidebar{
+      border-left: 4px solid black;
+      width: 300px;
+      justify-content: flex-end;
+      padding-left: 20px;
+  }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+  .sidebar img{
+      width: 150px;
+  }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+  .sidebar h2{
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.sidebar{
-  border-left: 1px solid black;
-  width: 340px;
-  height: 800px;
-  overflow: auto;
-  margin-left: 980px;
-}
-.sidebar img{
-  width: 140px;
-  float: left;
-  margin-top: 0px;
-  margin-left: 10px;
-}
-.sidebar p{
-  float: right;
-  margin-right: 60px;
-  padding-top: 20px;
-}
-.clearfix{
-  display: block;
-  content: "";
-  clear: both;
-}
+  } */

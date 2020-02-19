@@ -24,6 +24,7 @@ p{
 
 nav{
     background: #333333;
+
 }
 
 nav img{
@@ -89,6 +90,7 @@ nav a:hover{
     padding-top: 20px;
     letter-spacing: .05em;
     color: white;
+    font-size: 30px;
 }
 
 hr{
@@ -100,18 +102,30 @@ hr{
 }
 
 .intro img{
-    padding-top: 20px;
+    padding-top: 60px;
 }
 
 .intro-image{
     width: 491px;
-    margin-bottom: -120px;
+    /* margin-bottom: -620px; */
+}
+
+.recent-posts{
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 24px;
+}
+
+.recent-posts h2{
+    font-family: 'Trajan-pro-3', serif;
+    font-weight: 200;
 }
 
 .postcards{
     display: flex;
-    /* padding-top:200px; */
     background-color: #eee;
+
 }
 
 .postcards img{
@@ -262,27 +276,43 @@ hr{
       background-color: #12876f;
   }
 
+body{
+    width: 100%;
+    background: whitesmoke;
+}
+
 .post-head{
-      padding: 90px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-right: 120px;
+    text-align: center;
+    margin-left: 120px;
   }
 
-.post-head h1{
+.post-box{
+    width: 70%;
+    background: white;
+    margin-right: 40px;
+    padding: 20px;
+}
+
+.post-box h1{
       font-size: 38px;
       font-weight: 100;
   }
 
-.post-head h4{
+.post-box h4{
       padding-top: 10px;
-      padding-bottom: 20px;
-
+      padding-bottom: 20px;  
   }
 
-.post-head img{
-      width: 600px;
+.post-box img{
+      width: 100%;
       padding-bottom: 20px;
   }
 
-.post-head p{
+.post-box p{
     line-height: 1.5em;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -309,6 +339,7 @@ blockquote{
 
 .social-btns{
     padding-top: 20px;
+    text-align: left;
 }
   
   .fa:hover {
@@ -333,19 +364,91 @@ blockquote{
   .fa-linkedin {
     background: #007bb5;
     color: white;
-  }
+  }  
 
-  /* .sidebar{
-      border-left: 4px solid black;
-      width: 300px;
-      justify-content: flex-end;
-      padding-left: 20px;
-  }
+/* sidebar */
 
-  .sidebar img{
-      width: 150px;
-  }
+.sidebar-container{
+    width: 30%;
+    flex-direction: column;
+}
 
-  .sidebar h2{
+.sidebar{
+    background: white;
+    padding: 20px;
+}
 
-  } */
+.sidebar img{
+    margin: 40px;
+    width: 140px;
+}
+
+.sidebar hr{
+    width: 100px;
+    color: black;
+}
+
+.posts{
+    padding-top: 40px;
+    margin-top: 40px;
+    background: white;
+    padding-bottom: 40px;
+}
+
+.sidebar-container h4{
+    padding-bottom: 10px;
+}
+
+.sidebar-container h5{
+    text-align: left;
+    padding-left: 20px;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    width: 80px;
+    text-align: center; 
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.recentpost-img{
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.posts p{
+    font-size: 1rem;
+    color: #999;
+    padding: 20px;
+    text-align: left;
+}
+
+.search{
+    background: white;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.search input{
+    width: 240px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+/* footer */
+
+.design-by{
+    background: #333333;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.design-by a{
+    text-decoration: none;
+    color: white;
+}

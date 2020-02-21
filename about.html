@@ -11,46 +11,63 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
-    <div class="container">
-        <nav>
+<body>  
+        <header>
             <img src="img/denisewrightdesigns-logo light.png" alt="Denise Wright Designs Logo" class="logo">
-            <ul>
-                <li><a href="things.html">Things +</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="articlelist.html">Journal</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="intro">
-        <div class="intro-content"><h1>About</h1>
-            <p class="bio">Wife, Mother, Photographer, Graphic Designer, UX Designer, UI Engineering Student
-            </p> 
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="things.html">Things +</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="articlelist.html">Journal</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+
+        <div class="intro">
+            <div class="intro-content">
+                <h1>About</h1>
+                <p class="bio">Wife, Mother, Photographer, Graphic Designer, UX Designer, UI Engineering Student
+                </p> 
+            </div>
         </div>
     </div>
-</div>
-<div class="about-container">
-    <div class="about-left">
-        <p>Imagine you are standing before two apple trees. One has been well maintained,
-        the other has been neglected. People in general, whether they have an eye for design or not,
-        are automatically drawn to the better looking, well maintained tree. That is my drive.
-        To make people from all walks of life, look at, migrate towards and fall in love with every 
-        piece of design I create.</p> 
-            <h3>My Work</h3>
+
+        <div class="about-left">
+            <div class="bio-par">
+                <p>Imagine you are standing before two apple trees. One has been well maintained,
+                    the other has been neglected. People in general, whether they have an eye for design or not,
+                    are automatically drawn to the better looking, well maintained tree. That is my drive.
+                    To make people from all walks of life, look at, migrate towards and fall in love with every 
+                    piece of design I create.
+                </p> 
+                    <h3>My Work</h3>
                 <p>At just 16 years old, I knew I loved to create. I knew I wanted to turn my hobby into a career.
                 Many years later, and several projects behind me, I wasn’t satisfied with my career. 
                 I knew I needed to step up, add to my skillsets and take my career to the next level. 
                 UI/UX Design was the next step. Currently, I am a student at Kenzie Academy for UX Engineering
                 and will graduate on July 23, 2020.</p>
-            <h3>My Family</h3>
+                    <h3>My Family</h3>
                 <p>Aside from design, I always knew I wanted to be a wife and mom. Finally at 22 years old,
-                I met the love of my life. We met each other in November 2011, started dating in January 2012,
-                we were engaged in May 2012, and married that October. We added our son Ethan in 2013 and our
-                daughter Addison in 2016. We live and thrive in Broken Arrow, Oklahoma.</p> 
-    </div>
-        <div class="about-image"> <img src="img/Wrights.jpg">
-    </div>
-</div>
+                            I met the love of my life. We met each other in November 2011, started dating in January 2012,
+                            we were engaged in May 2012, and married that October. We added our son Ethan in 2013 and our
+                            daughter Addison in 2016. We live and thrive in Broken Arrow, Oklahoma.</p> 
+            </div>
+                <picture class="bio-img">
+                    <picture class="hero">
+                        <source 
+                            media="(min-width 401px)"
+                            srcset="img/Wrights-small.jpg">
+        
+                        <source
+                            srcset="img/Wrights.jpg">
+                            <img src="img/Wrights.jpg">
+                    </picture>
+                </picture>
+            </div>
 </body>
 </html>
 

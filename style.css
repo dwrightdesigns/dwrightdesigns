@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -26,6 +27,7 @@ img {
   --theme2: rgb(51, 51, 51);
   --theme3: rgb(255, 255, 255);
   --theme4: rgb(240, 240, 240);
+  --theme5: rgb(255, 133, 157);
 }
 
 h1,
@@ -149,6 +151,8 @@ nav a:hover {
   top: 7px;
 }
 
+/* responsive media starts here */
+
 @media screen and (max-width: 799px) {
   .logo {
     display: block;
@@ -227,10 +231,19 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+
+  form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (min-width: 981px) {
-  main{
+  main {
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
@@ -629,14 +642,123 @@ hr {
 
 /* start of footer styling */
 
-.design-by {
+footer {
   background: #333333;
-  padding: 30px;
-  margin-top: 20px;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+.design-by {
+  padding-top: 35px;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .design-by a {
   text-decoration: none;
   color: white;
+}
+
+/* start of contact styles */
+
+.contact-wrapper {
+  padding-top: 160px;
+  background-color: rgb(255, 133, 157) !important;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  font-family: nos;
+  letter-spacing: 0.2rem;
+  color: var(--theme2);
+}
+
+.contact p {
+  font-size: 2rem;
+  padding-top: 20px;
+  color: var(--theme3);
+}
+
+.form {
+  /* padding-top: 20px; */
+  width: 100%;
+  /* margin-top: 40px; */
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.action p {
+  color: var(--theme2);
+  text-align: center;
+  padding: 40px;
+  font-size: 1.3rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input {
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 0px;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 0px;
+}
+
+select {
+  height: 50px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 0px;
+}
+
+button {
+  margin-bottom: 100px;
+  width: 140px;
+  height: 50px;
+  border: 3px solid var(--theme3) !important;
+  background-color: transparent;
+  color: var(--theme3);
+  border-radius: 100px;
+  letter-spacing: 2px;
+  font-weight: 700 !important;
+  font-size: 1rem;
+  text-transform: uppercase !important;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--theme5);
+}
+
+.button {
+  padding-top: 40px;
 }

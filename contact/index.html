@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Denise Wright Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baumans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="/img/denisewrightdesigns-logo light.png"
+        alt="Denise Wright Designs Logo"
+        class="logo"
+      />
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="/things">Things +</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/journal">Journal</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+
+    <section class="contact-wrapper">
+        <div class="contact">
+            <h1>Let's Start Something New</h1>
+            <p>Say Hello!</p> 
+        </div>
+        <div class="form">
+                    <aside class="action">
+                        <p>I am always open to new opportunities and I look forward to hearing from you.</p>
+                    </aside>
+            <form action="https://formspree.io/xpzrpnkp" method="POST">
+                <div class="field">
+                    <label for="Name"></label>
+                    <input type="text" placeholder="Name" id="name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="Email"></label>
+                    <input type="email" placeholder="Email Address" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="Company Name"></label>
+                    <input type="text" placeholder="Company Name" id="company-name" name="company-name">
+                </div>
+                <div class="field">
+                    <label for="Comments"></label>
+                    <textarea name="comments" placeholder="Message" id="comments" cols="30" rows="10"></textarea required>
+                </div>
+                <div class="field ">
+                    <p>Please select the primary reason(s) for contact.</p>
+                    <select name="Reason" id="reason">
+                        <option value="general" selected>General</option>
+                        <option value="graphics">Graphic Design</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="photography">Photography</option>
+                        <option value="wood-burning">Wood Burning</option>
+                    </select>
+
+                    <div class="button">
+                        <button class="submit-btn" type="submit">Send</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <footer class="design-by">
+                <a href="https://www.designsbydenise.com">Designed by: Denise Wright</a>
+            </footer>
+        </div>
+    </section>

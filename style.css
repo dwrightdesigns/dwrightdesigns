@@ -151,160 +151,52 @@ nav a:hover {
   top: 7px;
 }
 
-/* responsive media starts here */
-
-@media screen and (max-width: 799px) {
-  .logo {
-    display: block;
-    max-height: 50px;
-  }
-
-  .about-img {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .logo {
-    display: block;
-    max-height: 50px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .logo {
-    display: block;
-    max-height: 50px;
-  }
-
-  .nav-toggle-label {
-    display: none;
-  }
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr auto minmax();
-  }
-
-  .logo {
-    grid-column: 1 / span 1;
-  }
-
-  nav {
-    all: unset;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    align-items: center;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-  nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: var(--theme1);
-    position: absolute;
-    top: 1.4em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-
-  nav a:hover::before {
-    transform: scale(1, 1);
-  }
-
-  form {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
-}
-
-@media screen and (min-width: 981px) {
-  main {
-    display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .bio-par p {
-    margin: 20px;
-  }
-
-  .bio-par {
-    width: 50%;
-  }
-
-  .bio-img {
-    width: 25%;
-    margin-top: -240px;
-  }
-
-  .intro-content {
-    width: 50%;
-    padding-left: 90px;
-  }
-}
-
 /* start of sub-header styling */
 
-.intro {
-  padding-top: 260px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
+.intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  padding-bottom: 20px;
   text-align: left;
+  text-align: justify;
   background-image: radial-gradient(
     circle at center,
     #05ff8f 0%,
     #12876f 100%
   ) !important;
+}
+
+.intro-content,
+.about-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 20px;
 }
 
-.intro-content {
-  font-size: 30px;
-  padding-right: 30px;
+.about-content {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.intro-content h1 {
+.intro-content h1,
+.about-content h1 {
   color: var(--theme3);
   padding-bottom: 20px;
 }
 
-.intro p {
-  letter-spacing: 0.05em;
+.intro-content p,
+.about-content p {
   color: white;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
-.intro-image {
-  width: 50%;
-  margin: 20px;
+.instagram {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 500px;
 }
 
 /* start of about page styling */
@@ -334,56 +226,51 @@ main {
 
 /* start of journal styling */
 
-.recent-posts {
+.post-header {
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
   background-color: #eee;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-.recent-posts h2 {
+.post-header h2 {
   font-family: "Trajan-pro-3", serif;
   font-weight: 200;
 }
 
-.postcards {
+.card-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #eee;
+  width: 100%;
 }
 
-.postcards img {
-  width: 300px;
-}
-
-.postcards li {
+.card-wrapper li {
   background-color: white;
-  width: 300px;
-  justify-content: space-between;
-  margin-top: 60px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.postcards ul {
+.card-wrapper ul {
+  padding: 20px;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
-  padding-left: 120px;
-  padding-right: 120px;
-  margin: 90px;
 }
 
-.postcards h1 {
+.card-wrapper h1 {
   font-size: 22px;
   color: #12876f;
   padding: 10px;
 }
 
-.postcards a {
+.card-wrapper a {
   text-decoration: none;
   color: #12876f;
 }
 
-.postcards h4 {
+.card-wrapper h4 {
   font-size: 14px;
   font-family: "Marvel", sans-serif;
   font-weight: 400;
@@ -393,29 +280,43 @@ main {
   padding: 10px;
 }
 
-.postcards p {
+.card-wrapper p {
   color: #555;
   padding: 10px;
+  text-align: justify;
+}
+
+.card-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* start of things styling */
 
+.graphic-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .graphic-head {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .graphic-content {
-  padding: 90px;
-  width: 600px;
+  padding: 20px;
 }
 
 .graphic-head img {
-  width: 600px;
-  padding: 90px;
+  width: 700px;
+  padding-bottom: 20px;
 }
 
-.graphic-head h2 {
-  font-size: 48px;
+.graphic-head h1 {
+  /* font-size: 48px; */
   color: #12876f;
 }
 
@@ -440,7 +341,7 @@ main {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .button-4 a {
   font-family: "Marvel", sans-serif;
@@ -761,4 +662,209 @@ button:hover {
 
 .button {
   padding-top: 40px;
+}
+
+/* responsive media starts here */
+
+@media screen and (max-width: 799px) {
+  .logo {
+    display: block;
+    max-height: 50px;
+  }
+
+  .about-img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .instagram {
+    width: 50%;
+  }
+
+  .intro-wrapper {
+    justify-content: center;
+    align-items: cen;
+  }
+
+  .graphic-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .graphic-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 740px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    display: block;
+    max-height: 50px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    display: block;
+    max-height: 50px;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr auto minmax();
+  }
+
+  .logo {
+    grid-column: 1 / span 1;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: var(--theme1);
+    position: absolute;
+    top: 1.4em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .instagram {
+    width: 100%;
+  }
+
+  .intro-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .intro-content {
+    display: flex;
+    max-width: 491px;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .recent-posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .recent-posts li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 45%;
+    margin: 5px;
+  }
+
+  .intro-wrapper {
+    justify-content: center;
+    align-items: cen;
+  }
+
+  .graphic-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .graphic-content {
+    width: 740px;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  main {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+  }
+
+  .bio-par p {
+    margin: 20px;
+  }
+
+  .bio-par {
+    width: 50%;
+  }
+
+  .bio-img {
+    padding-top: 20px;
+    max-width: 400px;
+  }
+
+  .recent-posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .recent-posts li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 23.9%;
+    margin: 5px;
+  }
 }

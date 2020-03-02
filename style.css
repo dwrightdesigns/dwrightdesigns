@@ -109,7 +109,7 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav a {
   opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+  transition: opacity 250ms ease-in-out 150ms;
 }
 
 .nav-toggle {
@@ -384,7 +384,6 @@ main {
 .post-head {
   display: flex;
   flex-direction: row;
-  margin-top: 80px;
   margin-right: 120px;
   text-align: center;
   margin-left: 120px;
@@ -395,6 +394,7 @@ main {
   background: white;
   margin-right: 40px;
   padding: 20px;
+  margin-top: 150px;
 }
 
 .post-box h1 {
@@ -414,6 +414,7 @@ main {
 
 .post-box p {
   line-height: 1.5em;
+  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
   width: 840px;
@@ -478,6 +479,7 @@ blockquote {
 .sidebar {
   background: white;
   padding: 20px;
+  margin-top: 150px;
 }
 
 .sidebar img {

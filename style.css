@@ -316,7 +316,6 @@ main {
 }
 
 .graphic-head h1 {
-  /* font-size: 48px; */
   color: #12876f;
 }
 
@@ -330,6 +329,12 @@ main {
 .graphic-head p {
   font-family: nos;
   padding-bottom: 40px;
+}
+
+.graphic__img {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 .button-4 {
@@ -668,7 +673,7 @@ button:hover {
 
 /* homepage styles begin here */
 
-.home__container{
+.home__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -696,7 +701,7 @@ button:hover {
 .head__content h1 {
   color: var(--theme1);
   font-family: nos;
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
 }
 
 .head__content p {
@@ -843,7 +848,7 @@ button:hover {
     max-width: 740px;
   }
 
-  .category__content{
+  .category__content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -982,7 +987,7 @@ button:hover {
     width: 740px;
   }
 
-  .category__content{
+  .category__content {
     display: flex;
     flex-direction: row;
     max-width: 600px;
@@ -1039,7 +1044,7 @@ button:hover {
 }
 
 @media screen and (min-width: 1320px) {
-  .category__content{
+  .category__content {
     max-width: 100%;
   }
 }
